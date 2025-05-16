@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, proxy-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-
     <title>VAG-clinika</title>
     <link rel="stylesheet" href="css/style.css" />
     <script
@@ -20,36 +16,884 @@
       ↑
   </button>
   
-    <header
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="header.partial.html"
-    ></header>
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="hero.partial.html"
-    ></section>
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="about-us.partial.html"
-    ></section>
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="services.partial.html"
-    ></section>
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="projects.partial.html"
-    ></section>
-    <section
-    data-hx-trigger="load"
-    data-hx-swap="outerHTML"
-    data-hx-get="footer.partial.html"
-  ></section>
+  <header class="header">
+    <div class="wrapper">
+      <nav class="header__nav">
+        <a href="#" class="header__menu-burger">
+          <span class="menu-burger-lines"></span>
+        </a>
+        <div class="header__nav-logo">
+          <a href="index.html">
+            <p>VAG-clinika</p>
+          </a>
+        </div>
+        <div class="header__menu-and-social-media">
+          <div class="header__menu">
+            <ul class="header__menu-item">
+                <li class="header__menu-item-li"><a href="#about-us">Про нас</a></li>
+                <li class="header__menu-item-li"><a href="#services">Послуги та ціни</a></li>
+                <li class="header__menu-item-li"><a href="#projects">Наші роботи</a></li>
+                <li class="header__menu-item-li"><a href="#footer">Контакти</a></li>
+            </ul>
+        </div>
+          <div class="social-media">
+            <a class="social-media__item" href="https://www.instagram.com/vag_clinika/" target="_blank" title="Відкрити у Instagram">
+                <img src="img/instagram.png" alt="instagram-icon">
+            </a>
+            <a class="social-media__item" href="https://t.me/VAG_Clinika">
+                <img src="img/telegram.png" alt="telegram-icon" title="Зв'язатись у Telegram">
+            </a>
+            <a class="social-media__item" href="viber://chat?number=+380509994015">
+                <img src="img/viber.png" alt="viber-icon" title="Зв'язатись у Viber">
+            </a>
+        </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="hero__auto-img"></div>
+    <div class="wrapper">
+      <div class="hero__info-block">
+        <span class="decor"></span>
+        <h1 class="title">Покращуємо кожну поїздку</h1>
+        <p>Ваш надійний партнер у догляді за автомобілем</p>
+        <div class="hero__buttons">
+          <a
+            class="red-btn for-desktop"
+            href="viber://chat?number=+380509994015"
+            title="Зв'язатись у Viber"
+            >
+            Записатись
+          </a>
+          <a
+            class="red-btn for-modile"
+            href="tel:+380509994015"
+            title="Зателефонувати"
+            >
+            Записатись
+          </a>
+          <a class="transparent-btn" href="#services"
+            >Послуги
+            <img src="img/arrow.png" alt="arrow" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+  </section>
+  <section class="about-us" id="about-us">
+    <div class="wrapper">
+      <div class="about-section">
+        <img src="img/about-us/about-us-img.webp" alt="Volkswagen logo" />
+        <div class="about-text">
+          <h2>— Про нас</h2>
+          <p class="title">
+            Поєднуємо досвід, технології та індивідуальний підхід
+          </p>
+          <p class="main-text">
+            Ми команда професіоналів, яка забезпечує високоякісне обслуговування
+            вашого автомобіля.
+          </br>
+             Ми надаємо широкий спектр послуг, від діагностики
+            до ремонту, гарантуючи надійність та безпеку кожної поїздки.
+          </p>
+        </div>
+      </div>
+      <div class="advantages-container">
+          <div class="advantage-card">
+              <img src="img/about-us/experience.png" alt="Experience">
+              <h4 class="advantage-title title">
+                  Досвід 
+              </h4>
+              <span class="decor"></span>
+              <p class="main-text">
+                  Обслуговано більше 5100 авто. 
+                  Ми знаємо все про ремонт та обслуговування різних марок і моделей авто.
+              </p>
+          </div>
+  
+          <div class="advantage-card">
+              <img src="img/about-us/professionalism.png" alt="Professionalism">
+              <h4 class="advantage-title title">
+                  Професіоналізм 
+              </h4>
+              <span class="decor"></span>
+              <p class="main-text">
+                  Наші майстри мають багаторічний досвід роботи з різними марками автомобілів та успішно виконують навіть найскладніші ремонти.
+              </p>
+          </div>
+  
+          <div class="advantage-card">
+              <img src="img/about-us/quality.png" alt="Quality">
+              <h4 class="advantage-title title">
+                  Якість  
+              </h4>
+              <span class="decor"></span>
+              <p class="main-text">
+                  Використовуємо тільки найкращі запчастини та сучасне обладнання для забезпечення бездоганного результату.
+              </p>
+          </div>
+  
+          <div class="advantage-card">
+              <img src="img/about-us/reliability.png" alt="Reliability">
+              <h4 class="advantage-title title">
+                  Надійність 
+              </h4>
+              <span class="decor"></span>
+              <p class="main-text">
+                  Ми відповідально ставимося до кожної деталі, гарантуємо надійність усіх виконаних робіт і запчастин.
+              </p>
+          </div>
+      </div>
+    </div>
+  
+    <div class="separator"></div>
+  </section>
+  <section class="services" id="services">
+    <div class="separator"></div>
+    <div class="wrapper">
+      <h2>— послуги та ціни</h2>
+      <p class="title">Професійний сервіс за доступною ціною</p>
+      <!-- TODO: add links for price -->
+      <div class="services__container">
+        <!-- діагностика та ремонт двигуна -->
+        <!-- + -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/engine-diagnostics.jpg" alt="Engine" />
+            <div class="services__card__text">
+              <h3>Діагностика та ремонт двигуна</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Швидка та точна діагностика та ремонт двигуна для безперебійної
+                роботи вашого авто.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Комп'ютерна діагностика — від 200₴</li>
+              <li>Заміна ремня генератора — від 300₴</li>
+              <li>Заміна радіатора системи охолодження — від 1200₴</li>
+              <li>Заміна свічки запалювання — від 100₴</li>
+              <li>Заміна свічки накалу — від 200₴</li>
+              <li>Заміна стартера — від 800₴</li>
+              <li>Ремонт стартера — від 1000₴</li>
+              <li>Заміна генератора — від 800₴</li>
+              <li>Ремонт генератора — від 800₴</li>
+              <li>Заміна прокладки впускного колектора — від 800₴</li>
+              <li>Заміна прокладки клапанної кришки — від 800₴</li>
+              <li>Заміна реміня ГРМ — від 2200₴</li>
+              <li>Заміна ланцюга ГРМ — від 4000₴</li>
+              <li>Заміна подушки двигуна — від 600₴</li>
+              <li>Заміна паливного насосу в баку — від 800₴</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Ремонт ходової частини -->
+        <!-- + -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/chassis.jpg" alt="Chassis" />
+            <div class="services__card__text">
+              <h3>Ремонт ходової частини</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Швидкий та якісний ремонт для забезпечення комфорту та безпеки.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Заміна стійки стабілізатора — від 250₴</li>
+              <li>Заміна втулки стабілізатора — від 300₴</li>
+              <li>Заміна сайлентблоків важеля — від 450₴</li>
+              <li>Заміна важеля поздовжнього — від 450₴</li>
+              <li>Заміна сайлентблоків важеля поздовжнього — від 800₴</li>
+              <li>Зняття підрамника — від 1000₴</li>
+              <li>
+                Заміна кульової опори (кріплення болти або заклепки) — від 300₴
+              </li>
+              <li>Заміна важеля — від 350₴</li>
+              <li>Заміна підшипника ступиці в зборі — від 850₴</li>
+              <li>Заміна підшипника ступиці запресована — від 700₴</li>
+              <li>Заміна амортизатора в пружині — від 800₴</li>
+              <li>Заміна амортизатора без пружини (вставка) — від 600₴</li>
+              <li>Заміна сайлентблока плаваючого — від 800₴</li>
+              <li>Заміна сайлентблока балки — від 1200₴</li>
+              <li>Заміна хрестовини карданного валу — від 1200₴</li>
+              <li>Заміна підвісного підшипника карданного валу — від 1200₴</li>
+              <li>Заміна ШРУСа (гранати) — від 650₴</li>
+              <li>Заміна пильовика ШРУСа — від 650₴</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Ремонт TSI - TDI - TFSI -->
+        <!-- TODO: add price -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/TSI – TFSI.jpg" alt="TSI – TFSI" />
+            <div class="services__card__text">
+              <h3>Ремонт TSI - TDI - TFSI</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Професійний ремонт двигунів TSI, TDI та TFSI для відновлення
+                їхньої ефективності та надійності.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Заміна щеплення МКПП — від 4500₴</li>
+              <li>Заміна щеплення ДСГ — від 8000₴</li>
+              <li>Заміна маховика — від 5000₴</li>
+              <li>Капітальний ремонт КПП — від 12000₴</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Ремонт усіх видів підвісок -->
+        <!-- + -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/air-suspension.jpg" alt="Air-suspension" />
+            <div class="services__card__text">
+              <h3>Ремонт усіх видів підвісок</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Експертний ремонт для забезпечення комфорту та стабільності.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Заміна пневмоамортизатора — від 1300₴</li>
+              <li>Реставрація пневмостійки від 7000₴</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Ремонт паливної системи -->
+        <!-- TODO: add price -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/fuel-system.jpg" alt="Fuel-system" />
+            <div class="services__card__text">
+              <h3>Ремонт паливної системи</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Професійний ремонт для забезпечення оптимальної роботи двигуна та
+                економії пального.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Ремонт дизельної форсунки від 350₴</li>
+              <li>Ремонт ПНВТ від 4000₴</li>
+              <li>Мийка бака від 2500₴</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Доукомплектування штатним обладнанням -->
+        <!-- TODO: add price -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/headlight.jpg" alt="headlight" />
+            <div class="services__card__text">
+              <h3>Доукомплектування штатним обладнанням</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Доукомплектування штатним обладнанням для зручності та комфорту.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Заміна пневмоамортизатора — від 1300₴</li>
+              <li>Установка лінз</li>
+              <li>Полірування і бронювання фар</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- ЗАМІНА ФОТО -->
+        <!-- Програмне керегування блоків ECU -->
+        <!-- TODO: add price -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/ECU.jpg" alt="ECU" />
+            <div class="services__card__text">
+              <h3>Програмне керегування блоків ECU</h3>
+              <span class="decor"></span>
+              <p class="main-text">Chip tuning, видалення ad_blue, egr, pdf.</p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Заміна пневмоамортизатора — від 1300₴</li>
+              <li>Chip tuning — збільшення потужності двигуна — від 250$</li>
+              <li>Вимкнення Ad_Blue — 250$</li>
+              <li>Програмне вимкнення EGR — 100$</li>
+              <li>Видалення і вимкнення сажового фільтра — від 130$</li>
+              <li>Зняття обмеження швидкості — 120$</li>
+              <li>Прошивка АКПП — від 250$</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Ремонт та обслуговування МКПП, АКПП, DSG -->
+        <!-- + ?? -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/МКПП.jpg" alt="МКПП" />
+            <div class="services__card__text">
+              <h3>Ремонт та обслуговування МКПП, АКПП, DSG</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Ремонт та обслуговування для безперебійної роботи трансмісії.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Заміна щеплення МКПП — від 4500₴</li>
+              <li>Заміна щеплення ДСГ — від 8000₴</li>
+              <li>Заміна маховика — від 5000₴</li>
+              <li>Капітальний ремонт КПП — від 12000₴</li>
+              <li>Ремонт мехатроніка — від 400$</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- ЗАМІНА ФОТО -->
+        <!-- Ремонт турбін -->
+        <!-- + -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/turbine.jpg" alt="turbine" />
+            <div class="services__card__text">
+              <h3>Ремонт турбін</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Ремонт турбін для відновлення потужності та ефективності вашого
+                двигуна.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Діагностика — від 500₴</li>
+              <li>Ремонт турбіни — від 4500₴</li>
+              <li>Зняття та встановлення турбіни — від 4000₴</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- ЗАМІНА ФОТО -->
+        <!-- Заправка кондиціонера -->
+        <!-- + -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/conditioner.jpg" alt="conditioner" />
+            <div class="services__card__text">
+              <h3>Заправка кондиціонера</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Професійна заправка кондиціонера для оптимальної роботи системи
+                охолодження.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Заправка від 900₴</li>
+              <li>Заміна компресора від 800₴</li>
+              <li>Заміна радіатора від 2500₴</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Ремонт та обслуговуння гальмівної системи -->
+        <!-- + -->
+        <div class="services__card">
+          <div class="services__card-info">
+            <img src="img/services/braking-system.jpg" alt="braking-system" />
+            <div class="services__card__text">
+              <h3>Ремонт та обслуговуння гальмівної системи</h3>
+              <span class="decor"></span>
+              <p class="main-text">
+                Забезпечення безпеки та ефективності гальмування.
+              </p>
+              <a class="red-btn show-price" href="javascript:void(0)">
+                <p class="see-prices">Дізнатись ціни</p>
+                <p class="collapse">Згорнути</p>
+              </a>
+            </div>
+          </div>
+          <div class="services__card-price">
+            <ul>
+              <li>Заміна шланга гальмівного — від 350₴</li>
+              <li>Заміна гальмівних колодок дискових (комплект) — від 400₴</li>
+              <li>Заміна гальмівних колодок передніх (комплект) — від 400₴</li>
+              <li>Заміна гальмівних колодок задніх (комплект) — від 500₴</li>
+              <li>
+                Заміна гальмівних колодок барабанних (комплект)/ручного гальма —
+                від 700₴
+              </li>
+              <li>Заміна гальмівного барабана — від 350₴</li>
+              <li>Заміна колодок ручного гальма — від 700₴</li>
+              <li>Заміна троса ручного гальма (одна сторона) — від 400₴</li>
+              <li>Заміна гальмівного супорта — від 600₴</li>
+              <li>
+                Заміна ремкомплекта гальмівного супорта 1 поршень — від 500₴
+              </li>
+              <li>Заміна ремкомплекта гальмівного супорта 2 поршня — від 700₴</li>
+              <li>Заміна головного гальмівного циліндра — від 1000₴</li>
+              <li>Заміна гальмівного циліндра робочого — від 600₴</li>
+              <li>Заміна вакуумного підсилювача гальм — від 1500₴</li>
+              <li>Заміна гальмівних дисків з колодками (пара) — від 800₴</li>
+              <li>Заміна гальмівної рідини — від 600₴</li>
+              <li>
+                Заміна гальмівних колодок задніх дискових з ел. приводом ручного
+                гальма (комплект) — від 550₴
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button id="show-all-services" class="show-all-services red-btn">
+        <p class="show-all-services__text">Переглянути всі послуги</p>
+        <span class="show-all-services__arrow">↓</span>
+      </button>
+    </div>
+    <div class="separator-down"></div>
+  </section>
+  <section class="projects" id="projects">
+    <div class="separator"></div>
+    <div class="wrapper">
+      <h2>— Наші роботи</h2>
+      <p class="title">Наші роботи — гарантія якості та надійності</p>
+  
+      <div class="slider wrapper">
+        <div class="slider__item">
+          <div class="slider__item__text">
+            <p class="title">VW Golf 6 2.0 TDI</p>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">Видалення фільтра сажі</p>
+            </div>
+          </div>
+          <div class="inner-slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <a href="img/projects/1.1.jpg" data-fancybox="gallery">
+                    <img src="img/projects/1.1.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/1.2.jpg" data-fancybox="gallery">
+                    <img src="img/projects/1.2.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/1.3.jpg" data-fancybox="gallery">
+                    <img src="img/projects/1.3.jpg" alt="car" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <button type="button" class="prev"><</button>
+              <button type="button" class="next">></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="slider__item">
+          <div class="slider__item__text">
+            <p class="title">Audi A8 D4</p>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">Ремонт пневмостойки</p>
+            </div>
+          </div>
+          <div class="inner-slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <a href="img/projects/2.1.jpg" data-fancybox="gallery">
+                    <img src="img/projects/2.1.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/2.2.jpg" data-fancybox="gallery">
+                    <img src="img/projects/2.2.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/2.3.jpg" data-fancybox="gallery">
+                    <img src="img/projects/2.3.jpg" alt="car" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <button type="button" class="prev"><</button>
+              <button type="button" class="next">></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="slider__item">
+          <div class="slider__item__text">
+            <p class="title">Skoda Octavia 2.0 TDI</p>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">
+                Програмне збільшення потужності рівня Stage 1
+              </p>
+            </div>
+          </div>
+          <div class="inner-slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <a href="img/projects/3.1.jpg" data-fancybox="gallery">
+                    <img src="img/projects/3.1.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/3.2.jpg" data-fancybox="gallery">
+                    <img src="img/projects/3.2.jpg" alt="car" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <button type="button" class="prev"><</button>
+              <button type="button" class="next">></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="slider__item">
+          <div class="slider__item__text">
+            <p class="title">Audi Q5</p>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">Видалення AdBlue</p>
+            </div>
+          </div>
+          <div class="inner-slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <a href="img/projects/4.1.jpg" data-fancybox="gallery">
+                    <img src="img/projects/4.1.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/4.2.jpg" data-fancybox="gallery">
+                    <img src="img/projects/4.2.jpg" alt="car" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <button type="button" class="prev"><</button>
+              <button type="button" class="next">></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="slider__item">
+          <div class="slider__item__text">
+            <p class="title">Porsche Panamera 4S</p>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">Обслуговування</p>
+            </div>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">Усунення течі оливи</p>
+            </div>
+          </div>
+          <div class="inner-slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <a href="img/projects/5.1.jpg" data-fancybox="gallery">
+                    <img src="img/projects/5.1.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/5.2.jpg" data-fancybox="gallery">
+                    <img src="img/projects/5.2.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/5.3.jpg" data-fancybox="gallery">
+                    <img src="img/projects/5.3.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/5.4.jpg" data-fancybox="gallery">
+                    <img src="img/projects/5.4.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/5.5.jpg" data-fancybox="gallery">
+                    <img src="img/projects/5.5.jpg" alt="car" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <button type="button" class="prev"><</button>
+              <button type="button" class="next">></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="slider__item">
+          <div class="slider__item__text">
+            <p class="title">Audi Q3 1.4tsi</p>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">Заміна ГРМ</p>
+            </div>
+          </div>
+          <div class="inner-slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <a href="img/projects/6.1.jpg" data-fancybox="gallery">
+                    <img src="img/projects/6.1.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/6.2.jpg" data-fancybox="gallery">
+                    <img src="img/projects/6.2.jpg" alt="car" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <button type="button" class="prev"><</button>
+              <button type="button" class="next">></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="slider__item">
+          <div class="slider__item__text">
+            <p class="title">Skoda Fabia</p>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">Капремонт</p>
+            </div>
+          </div>
+          <div class="inner-slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <a href="img/projects/7.1.jpg" data-fancybox="gallery">
+                    <img src="img/projects/7.1.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/7.2.jpg" data-fancybox="gallery">
+                    <img src="img/projects/7.2.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/7.3.jpg" data-fancybox="gallery">
+                    <img src="img/projects/7.3.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/7.4.jpg" data-fancybox="gallery">
+                    <img src="img/projects/7.4.jpg" alt="car">
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/7.5.jpg" data-fancybox="gallery">
+                    <img src="img/projects/7.5.jpg" alt="car">
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/7.6.jpg" data-fancybox="gallery">
+                    <img src="img/projects/7.6.jpg" alt="car">
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/7.7.jpg" data-fancybox="gallery">
+                    <img src="img/projects/7.7.jpg" alt="car">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <button type="button" class="prev"><</button>
+              <button type="button" class="next">></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="slider__item">
+          <div class="slider__item__text">
+            <p class="title">Passat B8 2.0TDI.</p>
+            <div class="work-details">
+              <div class="checkmark-container">
+                <img src="img/projects/check.png" alt="checkmark" />
+              </div>
+              <p class="main-text">Заміна ГРМ</p>
+            </div>
+          </div>
+          <div class="inner-slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <a href="img/projects/8.1.jpg" data-fancybox="gallery">
+                    <img src="img/projects/8.1.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/8.2.jpg" data-fancybox="gallery">
+                    <img src="img/projects/8.2.jpg" alt="car" />
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="img/projects/8.3.jpg" data-fancybox="gallery">
+                    <img src="img/projects/8.3.jpg" alt="car" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <button type="button" class="prev"><</button>
+              <button type="button" class="next">></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separator-down"></div>
+  
+  </section>
+  <footer class="footer" id="footer">
+    <div class="wrapper">
+      <div class="header__menu">
+        <ul class="header__menu-item">
+            <li class="header__menu-item-li"><a href="#about-us">Про нас</a></li>
+            <li class="header__menu-item-li"><a href="#services">Послуги та ціни</a></li>
+            <li class="header__menu-item-li"><a href="#projects">Наші роботи</a></li>
+            <li class="header__menu-item-li"><a href="#footer">Контакти</a></li>
+        </ul>
+    </div>
+
+        <div class="footer__contacts">
+            <p class="title">Контакти</p>
+            <div class="footer__mobile-phone">
+                <a href="tel:+380509994015" title="Зателефонувати">0 (50) 999 40 15</a>
+                <span> - Анатолій</span>
+            </div>
+            <div class="social-media">
+              <a class="social-media__item" href="https://www.instagram.com/vag_clinika/" target="_blank" title="Відкрити у Instagram">
+                  <img src="img/instagram.png" alt="instagram-icon">
+              </a>
+              <a class="social-media__item" href="https://t.me/VAG_Clinika">
+                  <img src="img/telegram.png" alt="telegram-icon" title="Зв'язатись у Telegram">
+              </a>
+              <a class="social-media__item" href="viber://chat?number=+380509994015">
+                  <img src="img/viber.png" alt="viber-icon" title="Зв'язатись у Viber">
+              </a>
+          </div>
+        </div>
+
+        <div class="footer__location">
+            <p class="title">Розміщення</p>
+            <a href="https://maps.app.goo.gl/29GbL7s9GPoCcV6JA" title="Переглянути на карті">
+                VAG_clinika <br>
+                вулиця Родини Бунґе, 6, Київ, 03134
+            </a>
+        </div>
+
+        <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.1906628952393!2d30.4059001!3d50.4189192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb1e0ad02f39%3A0x65db8dda1de94f1e!2sVAG_clinika!5e0!3m2!1suk!2sua!4v1741790593679!5m2!1suk!2sua" 
+                
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div> 
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/index.js" defer></script>
